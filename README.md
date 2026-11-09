@@ -1,10 +1,10 @@
 # Cinnamon Restaurant & Party Center — Website Concept
 
-This repository contains a responsive restaurant website concept. I built the pages with HTML, CSS, and vanilla JavaScript, focusing on the menu, gallery, mobile navigation, and a simple way for visitors to send a reservation request.
+A responsive restaurant website concept built with HTML, CSS, and vanilla JavaScript. The project focuses on presenting restaurant information, browsing a menu and gallery, using mobile navigation, and preparing a reservation request.
 
 **Repository:** https://github.com/fahim1252375-maker/restaurant-website-frontend
 
-## What is included
+## Features
 
 - Responsive page layout and mobile navigation
 - Restaurant introduction and service sections
@@ -20,7 +20,7 @@ This repository contains a responsive restaurant website concept. I built the pa
 - CSS3
 - Vanilla JavaScript
 
-## Run locally
+## Run Locally
 
 From a terminal:
 
@@ -32,13 +32,17 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000.
 
-## How the reservation form works
+## Reservation Flow
 
 Submitting the form prepares a message and opens WhatsApp. It does not save a booking to a database or confirm a reservation. The restaurant still needs to reply and confirm availability.
 
-## Before using this for a real restaurant
+## Before Using This for a Real Restaurant
 
-The site is a portfolio concept, not an approved business website. Confirm the restaurant's permission and check its address, phone number, menu, prices, opening hours, and social links before publishing it for a real business. Also verify image usage rights and remove any sample or unverified ratings and review counts.
+This is a portfolio concept, not an approved business website. Confirm the restaurant's permission and verify its address, phone number, menu, prices, opening hours, and social links before publishing it for a real business. Also verify image usage rights and remove any sample or unverified ratings and review counts.
+
+## AI Use Disclosure
+
+AI tools may be used as supporting aids for brainstorming, explaining concepts, debugging, and drafting documentation. The project author is responsible for reviewing, adapting, understanding, and testing published work. AI suggestions are not treated as verified results unless checked against the actual implementation.
 
 ---
 
