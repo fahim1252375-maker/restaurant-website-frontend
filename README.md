@@ -1,54 +1,45 @@
 # Cinnamon Restaurant & Party Center — Website Concept
 
-A responsive, multi-section restaurant website concept built with semantic HTML, CSS, and vanilla JavaScript. The interface demonstrates a restaurant landing page, interactive menu, gallery, contact details, and a WhatsApp-based reservation-request handoff.
+This repository contains a responsive restaurant website concept. I built the pages with HTML, CSS, and vanilla JavaScript, focusing on the menu, gallery, mobile navigation, and a simple way for visitors to send a reservation request.
 
-**Author:** MD. Minhazur Rahman Fahim  
 **Repository:** https://github.com/fahim1252375-maker/restaurant-website-frontend
 
-## Features
+## What is included
 
-- Responsive layout and mobile navigation
+- Responsive page layout and mobile navigation
 - Restaurant introduction and service sections
 - Menu category filtering
 - Image gallery and interface animations
 - Reservation form validation
-- WhatsApp handoff with a pre-filled reservation request
+- WhatsApp link with a pre-filled reservation message
 - SEO metadata and Restaurant structured data
 
-## Technology
+## Technologies
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
 
-## Reservation Flow
+## Run locally
 
-The form prepares a reservation request and opens WhatsApp with the details. It does **not** store reservations in a database or confirm a booking automatically. The restaurant must respond to confirm availability.
+From a terminal:
 
-## Demo and Content Accuracy
+~~~bash
+git clone https://github.com/fahim1252375-maker/restaurant-website-frontend.git
+cd restaurant-website-frontend
+python3 -m http.server 8000
+~~~
 
-This repository is a frontend concept/demo. Before using it as a live website for a real business, verify and obtain permission for the business name, address, phone number, menu, prices, opening hours, service descriptions, social links, images, ratings, and review counts.
+Then open http://localhost:8000.
 
-Any displayed rating or review-count claim must be checked against a current, authoritative source. Do not present sample or unverified figures as verified customer reviews. Replace stock/demo imagery where required and confirm image usage rights.
+## How the reservation form works
 
-## Run Locally
+Submitting the form prepares a message and opens WhatsApp. It does not save a booking to a database or confirm a reservation. The restaurant still needs to reply and confirm availability.
 
-Clone the repository, enter its folder, then run:
+## Before using this for a real restaurant
 
-    git clone https://github.com/fahim1252375-maker/restaurant-website-frontend.git
-    cd restaurant-website-frontend
-    python3 -m http.server 8000
-
-Open http://localhost:8000 in your browser. You can also open index.html directly.
-
-## Before Production
-
-- [ ] Confirm all business details with the business owner
-- [ ] Verify ratings, review counts, prices, and service claims
-- [ ] Confirm image licenses and replace placeholders if needed
-- [ ] Test navigation, filters, form validation, and WhatsApp handoff on mobile and desktop
-- [ ] Add a real booking backend only if confirmed online reservations are required
+The site is a portfolio concept, not an approved business website. Confirm the restaurant's permission and check its address, phone number, menu, prices, opening hours, and social links before publishing it for a real business. Also verify image usage rights and remove any sample or unverified ratings and review counts.
 
 ---
 
-Built as a frontend learning and portfolio project.
+Built by MD. Minhazur Rahman Fahim as a frontend portfolio project.
