@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate JavaScript and structured data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check JavaScript syntax
+        run: node --check script.js
+
+      - name: Validate JSON-LD structured data
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync } from 'node:fs';
+
+          const html = readFileSync('index.html', 'utf8');
+          const match = html.match(/<script type=["']application\/ld\+json["']>([\s\S]*?)<\/script>/i);
+
+          if (!match) {
+            throw new Error('No application/ld+json block was found in index.html.');
+          }
+
+          JSON.parse(match[1]);
+          console.log('JSON-LD structured data is valid JSON.');
+          NODE
