@@ -6,7 +6,7 @@ const CONFIG = {
   phoneTel: "tel:+8801758089822",
   whatsappNumber: "8801758089822",
   facebookUrl: "https://www.facebook.com/TheCinnamonRestaurant/",
-googleMapsDirectionsUrl: "https://www.google.com/maps/search/?api=1&query=Cinnamon+Restaurant+%26+Party+Center+East+Subidbazar+Sylhet",
+  googleMapsDirectionsUrl: "https://www.google.com/maps/search/?api=1&query=Cinnamon+Restaurant+%26+Party+Center+East+Subidbazar+Sylhet",
   googleMapsEmbedUrl: "https://maps.google.com/maps?q=East%20Subidbazar%2C%20Sylhet%2C%20Bangladesh&t=&z=15&ie=UTF8&iwloc=&output=embed",
   reviewsUrl: "https://www.facebook.com/TheCinnamonRestaurant/",
   images: {
@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initMenu();
   initGallery();
   initReservationForm();
-initScrollReveals();
+  initScrollReveals();
   initBackToTop();
   initButtonRipples();
 });
@@ -674,7 +674,6 @@ Special Request: ${reservationData.specialRequest}
     form.reset();
   });
 }
-
 
 function initScrollReveals() {
   const reveals = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
