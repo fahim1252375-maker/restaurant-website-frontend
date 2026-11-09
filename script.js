@@ -6,9 +6,7 @@ const CONFIG = {
   phoneTel: "tel:+8801758089822",
   whatsappNumber: "8801758089822",
   facebookUrl: "https://www.facebook.com/TheCinnamonRestaurant/",
-  rating: 4.0,
-  reviewsCount: 158,
-  googleMapsDirectionsUrl: "https://www.google.com/maps/search/?api=1&query=Cinnamon+Restaurant+%26+Party+Center+East+Subidbazar+Sylhet",
+googleMapsDirectionsUrl: "https://www.google.com/maps/search/?api=1&query=Cinnamon+Restaurant+%26+Party+Center+East+Subidbazar+Sylhet",
   googleMapsEmbedUrl: "https://maps.google.com/maps?q=East%20Subidbazar%2C%20Sylhet%2C%20Bangladesh&t=&z=15&ie=UTF8&iwloc=&output=embed",
   reviewsUrl: "https://www.facebook.com/TheCinnamonRestaurant/",
   images: {
@@ -220,8 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initMenu();
   initGallery();
   initReservationForm();
-  initRatingsCounter();
-  initScrollReveals();
+initScrollReveals();
   initBackToTop();
   initButtonRipples();
 });
@@ -678,59 +675,6 @@ Special Request: ${reservationData.specialRequest}
   });
 }
 
-function initRatingsCounter() {
-  const ratingSection = document.getElementById("reviews");
-  if (!ratingSection) return;
-
-  let hasAnimated = false;
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !hasAnimated) {
-        hasAnimated = true;
-        animateRatingCounters();
-      }
-    });
-  }, { threshold: 0.3 });
-
-  observer.observe(ratingSection);
-
-  function animateRatingCounters() {
-    const ratingEl = document.getElementById("counter-rating");
-    const countEl = document.getElementById("counter-reviews");
-
-    if (ratingEl) {
-      let currentVal = 0.0;
-      const targetVal = CONFIG.rating;
-      const step = 0.1;
-      const interval = setInterval(() => {
-        currentVal += step;
-        if (currentVal >= targetVal) {
-          currentVal = targetVal;
-          clearInterval(interval);
-        }
-        ratingEl.textContent = currentVal.toFixed(1);
-      }, 35);
-    }
-
-    if (countEl) {
-      let currentCount = 0;
-      const targetCount = CONFIG.reviewsCount;
-      const duration = 1200;
-      const stepTime = 15;
-      const increment = Math.ceil(targetCount / (duration / stepTime));
-
-      const interval = setInterval(() => {
-        currentCount += increment;
-        if (currentCount >= targetCount) {
-          currentCount = targetCount;
-          clearInterval(interval);
-        }
-        countEl.textContent = `${currentCount}`;
-      }, stepTime);
-    }
-  }
-}
 
 function initScrollReveals() {
   const reveals = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
