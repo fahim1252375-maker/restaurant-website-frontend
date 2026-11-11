@@ -6,22 +6,20 @@ const CONFIG = {
   phoneTel: "tel:+8801758089822",
   whatsappNumber: "8801758089822",
   facebookUrl: "https://www.facebook.com/TheCinnamonRestaurant/",
-  rating: 4.0,
-  reviewsCount: 158,
   googleMapsDirectionsUrl: "https://www.google.com/maps/search/?api=1&query=Cinnamon+Restaurant+%26+Party+Center+East+Subidbazar+Sylhet",
   googleMapsEmbedUrl: "https://maps.google.com/maps?q=East%20Subidbazar%2C%20Sylhet%2C%20Bangladesh&t=&z=15&ie=UTF8&iwloc=&output=embed",
-  reviewsUrl: "https://www.facebook.com/TheCinnamonRestaurant/",
   images: {
     hero: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80",
     about: "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1000&q=80",
     party: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1200&q=80"
   },
+  // Illustrative portfolio content only; not a verified restaurant menu.
   menuItems: [
     {
       id: "m-01",
       name: "Crispy Golden Calamari",
       category: "Starters",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Delicately seasoned fried calamari served with zesty citrus garlic aioli and herbs.",
       image: "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=600&q=80"
     },
@@ -29,7 +27,7 @@ const CONFIG = {
       id: "m-02",
       name: "Spiced Chicken Tikka Skewers",
       category: "Chicken",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Tender chicken marinated in aromatic South Asian spices, flame-grilled to perfection.",
       image: "https://images.unsplash.com/photo-1599481238505-b8b0537a3f77?auto=format&fit=crop&w=600&q=80"
     },
@@ -37,7 +35,7 @@ const CONFIG = {
       id: "m-03",
       name: "Traditional Sylheti Beef Bhuna",
       category: "Beef",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Slow-simmered beef cooked with fragrant cloves, cinnamon quills, and rich caramelized onion gravy.",
       image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
     },
@@ -45,7 +43,7 @@ const CONFIG = {
       id: "m-04",
       name: "Royal Mutton Kacchi Biryani",
       category: "Rice & Biryani",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Aromatic basmati rice layered with marinated tender meat, saffron, aloo, and subtle ghee aroma.",
       image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80"
     },
@@ -53,7 +51,7 @@ const CONFIG = {
       id: "m-05",
       name: "Grilled King Prawn Sizzler",
       category: "Seafood",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Fresh tiger prawns tossed in coriander chili butter, served over a sizzling bell pepper medley.",
       image: "https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&w=600&q=80"
     },
@@ -61,7 +59,7 @@ const CONFIG = {
       id: "m-06",
       name: "Creamy Paneer Butter Masala",
       category: "Vegetarian",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Velvety cottage cheese cubes simmered in creamy tomato gravy infused with fenugreek and butter.",
       image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=600&q=80"
     },
@@ -69,7 +67,7 @@ const CONFIG = {
       id: "m-07",
       name: "Signature Butter Chicken",
       category: "Chicken",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Succulent tandoori-roasted chicken pieces bathed in a luscious, mildly spiced silky tomato cream sauce.",
       image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&q=80"
     },
@@ -77,7 +75,7 @@ const CONFIG = {
       id: "m-08",
       name: "Sizzling Garlic Beef Steak",
       category: "Beef",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Tender cut beef steak glazed with roasted garlic rosemary butter and seasoned seasonal vegetables.",
       image: "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80"
     },
@@ -85,7 +83,7 @@ const CONFIG = {
       id: "m-09",
       name: "Saffron Vegetable Pulao",
       category: "Rice & Biryani",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Fragrant long-grain rice gently tempered with saffron threads, cardamom pods, and garden vegetables.",
       image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=80"
     },
@@ -93,7 +91,7 @@ const CONFIG = {
       id: "m-10",
       name: "Warm Cinnamon Molten Lava Cake",
       category: "Desserts",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Rich dark cocoa cake with a decadent warm molten center, accompanied by vanilla bean cream.",
       image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80"
     },
@@ -101,7 +99,7 @@ const CONFIG = {
       id: "m-11",
       name: "Artisan Caramel Cappuccino",
       category: "Coffee",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Freshly pulled espresso with textured micro-foam and a hint of house cinnamon caramel syrup.",
       image: "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80"
     },
@@ -109,7 +107,7 @@ const CONFIG = {
       id: "m-12",
       name: "Premium Sylheti Masala Tea",
       category: "Tea",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Fresh estate tea leaves brewed with fresh ginger, cardamom, whole cinnamon, and creamy milk.",
       image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80"
     },
@@ -117,7 +115,7 @@ const CONFIG = {
       id: "m-13",
       name: "Fresh Mint Lemonade Splash",
       category: "Drinks",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Refreshing cooler made with crushed garden mint leaves, freshly squeezed lime, and chilled sparkling water.",
       image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80"
     },
@@ -125,7 +123,7 @@ const CONFIG = {
       id: "m-14",
       name: "Grilled Fish Fillet in Lemon Butter",
       category: "Seafood",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Pan-seared tender boneless fish with crushed peppercorns and aromatic caper lemon drizzle.",
       image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80"
     },
@@ -133,7 +131,7 @@ const CONFIG = {
       id: "m-15",
       name: "Tandoori Stuffed Mushroom Caps",
       category: "Starters",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Plump button mushrooms stuffed with spiced cheese and herbs, roasted until golden.",
       image: "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=600&q=80"
     },
@@ -141,73 +139,74 @@ const CONFIG = {
       id: "m-16",
       name: "Dal Makhani Royale",
       category: "Vegetarian",
-      price: "৳ --",
+      price: "Price not confirmed",
       desc: "Whole black lentils slow-cooked overnight with creamy butter and gentle aromatic spices.",
       image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80"
     }
   ],
+  // Stock images and captions are illustrative, not verified venue photographs.
   galleryItems: [
     {
       id: "g-01",
       category: "Interior",
-      title: "Warm Ambient Dining Hall",
-      desc: "Comfortable seating with warm acoustic lighting and gold accents.",
+      title: "Illustrative dining-room image",
+      desc: "Stock image used as a visual placeholder; not a verified restaurant photo.",
       image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
     },
     {
       id: "g-02",
       category: "Food",
-      title: "Chef Crafted Delicacies",
-      desc: "Artful culinary presentation celebrating authentic flavors.",
+      title: "Illustrative food image",
+      desc: "Stock image used as a visual placeholder; not a verified menu item.",
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80"
     },
     {
       id: "g-03",
       category: "Party/Events",
-      title: "Elegant Celebration Setting",
-      desc: "Custom banquet arrangement tailored for memorable family moments.",
+      title: "Illustrative event-setting image",
+      desc: "Stock image used as a visual placeholder; event facilities are not confirmed.",
       image: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1200&q=80"
     },
     {
       id: "g-04",
       category: "Exterior",
-      title: "Welcoming Restaurant Entrance",
-      desc: "Conveniently accessible in East Subidbazar, Sylhet.",
+      title: "Illustrative exterior image",
+      desc: "Stock image only; it does not show a verified restaurant entrance or location.",
       image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80"
     },
     {
       id: "g-05",
       category: "Dining",
-      title: "Intimate Table Service",
-      desc: "Thoughtfully spaced seating for family and group dining.",
+      title: "Illustrative dining image",
+      desc: "Stock image used as a visual placeholder; seating arrangements are not confirmed.",
       image: "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=80"
     },
     {
       id: "g-06",
       category: "Food",
-      title: "Sizzling Gourmet Specialties",
-      desc: "Carefully selected halal meats and vegetarian selections.",
+      title: "Illustrative food presentation image",
+      desc: "Stock image only; ingredients, halal status, and menu availability are not verified.",
       image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80"
     },
     {
       id: "g-07",
       category: "Interior",
-      title: "Private Dining Suite",
-      desc: "Exclusive room setup for quiet family gatherings or business dinners.",
+      title: "Illustrative private-room image",
+      desc: "Stock image used as a visual placeholder; private dining is not confirmed.",
       image: "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=1200&q=80"
     },
     {
       id: "g-08",
       category: "Party/Events",
-      title: "Special Gathering Hall",
-      desc: "Dedicated event space hosting birthdays and intimate parties.",
+      title: "Illustrative gathering-space image",
+      desc: "Stock image used as a visual placeholder; event space availability is not confirmed.",
       image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1200&q=80"
     },
     {
       id: "g-09",
       category: "Dining",
-      title: "Artisan Coffee & Tea Corner",
-      desc: "Relaxing atmosphere to enjoy warm desserts and beverages.",
+      title: "Illustrative beverage image",
+      desc: "Stock image used as a visual placeholder; beverages and facilities are not confirmed.",
       image: "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=1200&q=80"
     }
   ]
@@ -220,7 +219,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initMenu();
   initGallery();
   initReservationForm();
-  initRatingsCounter();
   initScrollReveals();
   initBackToTop();
   initButtonRipples();
@@ -391,7 +389,7 @@ function initMenu() {
               data-item-name="${item.name}"
               aria-label="Enquire about ${item.name}"
             >
-              Order / Enquire
+              Ask if available
             </button>
           </div>
         </div>
@@ -402,7 +400,7 @@ function initMenu() {
     document.querySelectorAll(".btn-order-enquire").forEach(btn => {
       btn.addEventListener("click", (e) => {
         const itemName = btn.getAttribute("data-item-name") || "this menu item";
-        const message = `Hello Cinnamon Restaurant & Party Center, I would like to enquire about ordering: ${itemName}. Please share current availability and pricing.`;
+        const message = `Hello Cinnamon Restaurant & Party Center, I saw "${itemName}" in the sample menu on your website. Could you please confirm whether it is actually offered and share the current price and availability?`;
         const waUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
 
         showToast(`Opening WhatsApp enquiry for "${itemName}"...`);
@@ -676,60 +674,6 @@ Special Request: ${reservationData.specialRequest}
     }, 400);
     form.reset();
   });
-}
-
-function initRatingsCounter() {
-  const ratingSection = document.getElementById("reviews");
-  if (!ratingSection) return;
-
-  let hasAnimated = false;
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !hasAnimated) {
-        hasAnimated = true;
-        animateRatingCounters();
-      }
-    });
-  }, { threshold: 0.3 });
-
-  observer.observe(ratingSection);
-
-  function animateRatingCounters() {
-    const ratingEl = document.getElementById("counter-rating");
-    const countEl = document.getElementById("counter-reviews");
-
-    if (ratingEl) {
-      let currentVal = 0.0;
-      const targetVal = CONFIG.rating;
-      const step = 0.1;
-      const interval = setInterval(() => {
-        currentVal += step;
-        if (currentVal >= targetVal) {
-          currentVal = targetVal;
-          clearInterval(interval);
-        }
-        ratingEl.textContent = currentVal.toFixed(1);
-      }, 35);
-    }
-
-    if (countEl) {
-      let currentCount = 0;
-      const targetCount = CONFIG.reviewsCount;
-      const duration = 1200;
-      const stepTime = 15;
-      const increment = Math.ceil(targetCount / (duration / stepTime));
-
-      const interval = setInterval(() => {
-        currentCount += increment;
-        if (currentCount >= targetCount) {
-          currentCount = targetCount;
-          clearInterval(interval);
-        }
-        countEl.textContent = `${currentCount}`;
-      }, stepTime);
-    }
-  }
 }
 
 function initScrollReveals() {
