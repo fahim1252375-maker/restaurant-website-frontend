@@ -4,6 +4,8 @@ A responsive restaurant website concept built with HTML, CSS, and vanilla JavaSc
 
 **Live demo:** [Open Cinnamon Restaurant website](https://cinnamon-restaurant-concept.onrender.com)
 
+**Live demo:** [Open Cinnamon Restaurant website](https://cinnamon-restaurant-concept.onrender.com)
+
 **Repository:** https://github.com/fahim1252375-maker/restaurant-website-frontend
 
 ## Features
