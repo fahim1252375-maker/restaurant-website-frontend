@@ -2,6 +2,8 @@
 
 A responsive restaurant website concept built with HTML, CSS, and vanilla JavaScript. The project focuses on presenting restaurant information, browsing a menu and gallery, using mobile navigation, and preparing a reservation request.
 
+**Live demo:** [Open Cinnamon Restaurant website](https://cinnamon-restaurant-concept.onrender.com)
+
 **Repository:** https://github.com/fahim1252375-maker/restaurant-website-frontend
 
 ## Features
