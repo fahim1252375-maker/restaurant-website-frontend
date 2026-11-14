@@ -1,3 +1,12 @@
+<div align="center">
+
+<img src="./assets/brand/project-banner.svg" width="100%" alt="restaurant-website-frontend project header" />
+
+<img src="https://img.shields.io/badge/VISUAL%20SYSTEM-GITHUB%20DARK%20PRO-161B22?style=flat-square&labelColor=161B22&color=58A6FF" alt="GitHub Dark Pro visual system" />
+<img src="https://img.shields.io/badge/PROJECT-STUDENT%20BUILD-161B22?style=flat-square&labelColor=161B22&color=3FB950" alt="Student-built project" />
+
+</div>
+
 # Cinnamon Restaurant & Party Center — Website Concept
 
 A responsive restaurant website concept built with HTML, CSS, and vanilla JavaScript. The project focuses on presenting restaurant information, browsing a menu and gallery, using mobile navigation, and preparing a reservation request.
