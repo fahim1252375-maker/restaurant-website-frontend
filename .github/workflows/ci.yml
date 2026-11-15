@@ -27,7 +27,7 @@ jobs:
           node --input-type=module <<'NODE'
           import { readFileSync } from 'node:fs';
           const html = readFileSync('index.html', 'utf8');
-          const blocks = [...html.matchAll(/<script\\b[^>]*type=["']application\\/ld\\+json["'][^>]*>([\\s\\S]*?)<\\/script>/gi)];
+          const blocks = [...html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
           if (blocks.length === 0) {
             console.log('No JSON-LD block is declared; structured-data validation is not applicable.');
             process.exit(0);
